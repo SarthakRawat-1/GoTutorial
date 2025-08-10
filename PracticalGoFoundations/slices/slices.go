@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 	"sort"
 )
 
@@ -50,6 +51,8 @@ func main() {
 
 	vs := []float64{2, 1, 3}
 	fmt.Println(median(vs))
+
+	fmt.Println(reflect.TypeOf(2))
 }
 
 func median(values []float64) float64 {
